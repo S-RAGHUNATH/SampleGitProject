@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <style>
+        .winner{
+            color: green;
+        }
+        .loser{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+    <div class="container">
+        <div class="column">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        Points Game
+                      </p>
+                      
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1"> <span id="p1score">0</span> to <span id="p2score">0</span> </h1>
+                            <p class="subtitle">use the button below to keep score</p>
+                            <label for="toselect" class="label is-large is-inline">playing to</label>
+                            <div class="select is-rounded">
+                                <select id="toselect">
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                </select>
+                                
+                            </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1display" class="is-primary button card-footer-item">P1Score</button>
+                        <button id="p2display" class="is-info button card-footer-item">P2Score</button>
+                        <button id="reset" class="is-danger button card-footer-item">Reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+ 
+    <script src="practise1.js"></script>
+</body>
+</html>
